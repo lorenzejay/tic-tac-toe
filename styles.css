@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    color: #545454;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    background: #14bdac;
+    /* height will be determined by the children  */
+    /* width: 500px;
+    height: 500px; */
+    margin: 50px;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.title{
+    text-align: center;
+}
+
+.title span {
+    color: #f2ebd3;
+}
+
+.status-action {
+    margin-top: 25px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 30px;
+}
+
+.status span {
+    color: #f2ebd3;
+}
+
+.reset{
+    cursor: pointer;
+
+}
+
+.reset:hover{
+    color: #f2ebd3;
+}
+
+.game-grid{
+    background: #8da192;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15px;
+    margin-top: 50px;
+}
+
+.game-cell{
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+    background: #14bdac;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.x::after{
+    content: '×';
+    font-size: 200px;
+}
+
+.o::after{
+    content: '○';
+    color: #f2ebd3;
+    font-size: 200px;
+}
+
+.won:after{
+    color: red;
+}
+
+footer{
+    position: relative;
+    top: 1000px;
+    right: 500px;
+}
+
