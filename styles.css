@@ -9,16 +9,17 @@ body{
     color: #545454;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .container{
     background: #14bdac;
-    /* height will be determined by the children  */
-    /* width: 500px;
-    height: 500px; */
     margin: 50px;
     padding: 50px;
     border-radius: 25px;
+    align-items: center;
+    position: relative;
+    left: 70px;
 }
 
 .title{
@@ -88,7 +89,7 @@ body{
 
 footer{
     position: relative;
-    top: 1000px;
-    right: 500px;
+    top: 700px;
+    right: 425px;
 }
 
